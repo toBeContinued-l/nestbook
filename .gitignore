@@ -1,0 +1,29 @@
+.DS_Store
+target/
+.m2/
+
+*.log
+*.class
+
+.idea/
+*.iml
+
+# Local environment files and credentials. Commit .env.example only.
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+application-local.properties
+application-secrets.yml
+application-secrets.yaml
+application-secrets.properties
+
+# Private keys, certificates, and Java keystores.
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_ed25519

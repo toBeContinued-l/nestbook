@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: nestbook-server
+  datasource:
+    url: ${NESTBOOK_DB_URL:jdbc:mysql://localhost:3306/nestbook?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai}
+    username: ${NESTBOOK_DB_USERNAME:nestbook}
+    password: ${NESTBOOK_DB_PASSWORD:nestbook}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: ${NESTBOOK_REDIS_HOST:localhost}
+      port: ${NESTBOOK_REDIS_PORT:6379}
+      database: ${NESTBOOK_REDIS_DATABASE:1}
+
+server:
+  port: ${SERVER_PORT:7002}
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+
+nestbook:
+  trial-days: 30
+  default-daily-ai-limit: 10
+  wechat:
+    oa:
+      token: ${NESTBOOK_WECHAT_OA_TOKEN:}
