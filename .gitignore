@@ -11,6 +11,9 @@ target/
 # Local instructions for AI coding assistants. Do not publish in this repository.
 AGENTS.md
 
+# Local product and development notes. Do not publish in this repository.
+docs/
+
 # Local environment files and credentials. Commit .env.example only.
 .env
 .env.*
