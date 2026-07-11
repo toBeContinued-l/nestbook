@@ -8,6 +8,9 @@ target/
 .idea/
 *.iml
 
+# Local instructions for AI coding assistants. Do not publish in this repository.
+AGENTS.md
+
 # Local environment files and credentials. Commit .env.example only.
 .env
 .env.*
